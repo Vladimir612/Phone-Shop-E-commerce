@@ -1,0 +1,27 @@
+@import '../../index.sass'
+
+.detailsWrapper
+  button
+    text-transform: capitalize
+    font-size: 1.4rem
+    background: transparent
+    border: .05rem solid $lightBlue
+    color: $lightBlue
+    border-radius: .5rem
+    padding: .2rem .5rem
+    cursor: pointer
+    margin: .2rem .5rem .2rem 0
+    transition: all .5s ease-in-out
+    &:hover
+      background: $lightBlue
+      color: $mainBlue
+    &:focus
+      outline: none
+  .text-orange
+    border: .05rem solid $mainYellow !important
+    color: $mainYellow !important
+    &:hover
+      background: $mainYellow
+      color: $mainDark !important
+    &:focus
+      outline: none
