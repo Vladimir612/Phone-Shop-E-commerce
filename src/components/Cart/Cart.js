@@ -6,7 +6,7 @@ import { ProductConsumer } from '../../context'
 import CartList from './CartList'
 import CartTotals from './CartTotals'
 
-const Cart = () => {
+const Cart = (props) => {
   return (
     <section>
       <ProductConsumer>
@@ -18,7 +18,7 @@ const Cart = () => {
                 <Title name='your' title='cart' />
                 <CartColumns />
                 <CartList value={value} />
-                <CartTotals value={value} />
+                <CartTotals value={value} history={props.history} />
               </>
             )
           } else {
